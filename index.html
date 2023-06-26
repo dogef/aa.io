@@ -5,6 +5,22 @@
     <title>个人介绍</title>  
     <link rel="stylesheet" href="style.css">  
 	<body bgcolor="#50c878"></body>
+    <script language=Javascript>
+    function time() {
+        //获得显示时间的div
+        t_div = document.getElementById('showtime');
+        var now = new Date()
+            //替换div内容 
+        t_div.innerHTML = "现在是" + now.getFullYear() + "年" + (now.getMonth() + 1) + "月" + now.getDate() + "日" + now.getHours() + "时" + now.getMinutes() + "分" + now.getSeconds() + "秒";
+        //等待一秒钟后调用time方法，由于settimeout在time方法内，所以可以无限调用
+        setTimeout(time, 1000);
+    }
+    </script>
+</head>
+
+<body onload="time()">
+    <div id="showtime"></div>
+
 	
 </head>  
 <body>  
@@ -15,6 +31,7 @@
                 <li><a href="#">首页</a></li>   
                 <li><a href="https://tool.gljlw.com/qq/?qq=79540801">QQ联系方式1:79540801</a></li>  
 	<li><a href="https://tool.gljlw.com/qq/?qq=639476426">QQ联系方式2:639476426</a></li>  
+	<li><a href="result.html">彩蛋1</a></li>   
             </ul>  
         </nav>  
     </header>  
