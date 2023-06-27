@@ -12,7 +12,8 @@
   <meta charset="UTF-8">  
   <title>个人介绍</title>  
   <link rel="stylesheet" href="style.css">  
-
+  
+  
 
 </head>  
 <body onload="time()">  
@@ -63,20 +64,9 @@
  
 </head>
 <body>
-<style>  
-  body {  
-    background: url("hh.jpg") no-repeat center center;  
-    background-size: cover;  
-    background-attachment: fixed;  
-    background-color: #CCCCCC;  
-    margin: 0 auto; /* 设置页面的左右margin为"auto" */  
-  }  
-  header, main, footer {  
-    width: 80%; /* 设置元素的宽度 */  
-    margin: 0 auto; /* 设置元素的左右margin为"auto" */  
-  }  
-</style>  
 <script>
+
+</style>  
 function clickEffect() {
   let balls = [];
   let longPressed = false;
@@ -211,9 +201,29 @@ function clickEffect() {
     }
   }
 }
+
 clickEffect();//调用特效函数
 
-
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+<style>  
+  body {  
+    background: url("hh.jpg") no-repeat center center;  
+    background-size: cover;  
+    background-attachment: fixed;  
+    background-color: #CCCCCC;  
+    margin: 0 auto; /* 设置页面的左右margin为"auto" */  
+  }  
+  header, main, footer {  
+    width: 80%; /* 设置元素的宽度 */  
+    margin: 0 auto; /* 设置元素的左右margin为"auto" */  
+  }  
+</style>  
 <footer class="text-center mt-5 py-3">
   <div>
     <span id="timeDate">载入天数...</span>
@@ -249,7 +259,5 @@ clickEffect();//调用特效函数
 
 </footer>
 
-</body>
-</html>
 </body>
 </html>
